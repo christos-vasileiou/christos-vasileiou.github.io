@@ -76,7 +76,7 @@ const CONFIG = {
   },
   resume: {
     fileUrl:
-      'CV/Christos-Vasileiou-CV.pdf', // Empty fileUrl will hide the `Download Resume` button.
+      'https://drive.google.com/file/d/1a8gKO3nJnQYRN1qHmhzsYyNWcMoOIwqG/view?usp=sharing', // Empty fileUrl will hide the `Download Resume` button.
   },
   skills: [
     'Python',
