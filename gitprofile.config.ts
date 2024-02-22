@@ -97,7 +97,7 @@ const CONFIG = {
   experiences: [
     {
       company: 'Intel Corporation',
-      position: 'Machine Learning Position',
+      position: 'ML-Based Pathfinding Test Developer',
       from: 'May 2022',
       to: 'August 2022',
       companyLink: 'https://intel.com',
@@ -190,8 +190,8 @@ const CONFIG = {
       primary: '#ffa31a',
       secondary: '#219aaf',
       accent: '#e8d03a',
-      neutral: '#e4e2e9',
-      'base-100': '#1a0f00',
+      neutral: '#efedf4',
+      'base-100': '#00001a',
       '--rounded-box': '3rem',
       '--rounded-btn': '3rem',
     },
