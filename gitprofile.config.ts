@@ -188,9 +188,9 @@ const CONFIG = {
     customTheme: {
       primary: '#ffa31a',
       secondary: '#219aaf',
-      accent: '#e8d03a',
+      accent: '#0066ff',
       neutral: '#efedf4',
-      'base-100': '#1a1a1a',
+      'base-100': '#08252b',
       '--rounded-box': '3rem',
       '--rounded-btn': '3rem',
     },
