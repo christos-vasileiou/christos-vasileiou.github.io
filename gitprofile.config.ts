@@ -153,7 +153,7 @@ const CONFIG = {
     snippetVersion: 6,
   },
   themeConfig: {
-    defaultTheme: 'nord',
+    defaultTheme: 'Sunset',
 
     // Hides the switch in the navbar
     // Useful if you want to support a single color mode
@@ -170,13 +170,12 @@ const CONFIG = {
     themes: [
       'light',
       'dark',
-      'bumblebee',
       'emerald',
       'corporate',
       'synthwave',
       'halloween',
       'forest',
-      'luxury',
+      'Luxury',
       'business',
       'night',
       'dim',
@@ -191,7 +190,7 @@ const CONFIG = {
       secondary: '#219aaf',
       accent: '#e8d03a',
       neutral: '#efedf4',
-      'base-100': '#00001a',
+      'base-100': '#1a1a1a',
       '--rounded-box': '3rem',
       '--rounded-btn': '3rem',
     },
