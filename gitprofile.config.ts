@@ -19,8 +19,8 @@ const CONFIG = {
         sortBy: 'stars', // Sort projects by 'stars' or 'updated'
         limit: 8, // How many projects to display.
         exclude: {
-          forks: false, // Forked projects will not be displayed if set to true.
-          projects: ['christos-vasileiou/the-art-of-command-line'], // These projects will not be displayed. example: ['christos-vasileiou/my-project1', 'christos-vasileiou/my-project2']
+          forks: true, // Forked projects will not be displayed if set to true.
+          projects: [], // These projects will not be displayed. example: ['christos-vasileiou/my-project1', 'christos-vasileiou/my-project2']
         },
       },
       manual: {
