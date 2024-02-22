@@ -153,7 +153,7 @@ const CONFIG = {
     snippetVersion: 6,
   },
   themeConfig: {
-    defaultTheme: 'Sunset',
+    defaultTheme: 'procyon',
 
     // Hides the switch in the navbar
     // Useful if you want to support a single color mode
@@ -186,7 +186,7 @@ const CONFIG = {
 
     // Custom theme, applied to `procyon` theme
     customTheme: {
-      primary: '#ffa31a',
+      primary: '#ff944d',
       secondary: '#219aaf',
       accent: '#0066ff',
       neutral: '#efedf4',
