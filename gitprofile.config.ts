@@ -25,7 +25,7 @@ const CONFIG = {
       },
       manual: {
         // Properties for manually specifying projects
-        projects: [''], // List of repository names to display. example: ['christos-vasileiou/my-project1', 'christos-vasileiou/my-project2']
+        projects: ['christos-vasileiou/mobile-SRGAN', 'christos-vasileiou/vlsi-design', 'christos-vasileiou/yolov3tiny-edgetpu', 'christos-vasileiou/algorithms4logic-synth', 'christos-vasileiou/A-Sobel-filter-edge-detector-on-FPGA'], // List of repository names to display. example: ['christos-vasileiou/my-project1', 'christos-vasileiou/my-project2']
       },
     },
     external: {
