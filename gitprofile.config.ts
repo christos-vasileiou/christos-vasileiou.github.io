@@ -25,7 +25,7 @@ const CONFIG = {
       },
       manual: {
         // Properties for manually specifying projects
-        projects: ['christos-vasileiou/mobile-SRGAN', 'christos-vasileiou/vlsi-design', 'christos-vasileiou/yolov3tiny-edgetpu', 'christos-vasileiou/algorithms4logic-synth', 'christos-vasileiou/A-Sobel-filter-edge-detector-on-FPGA'], // List of repository names to display. example: ['christos-vasileiou/my-project1', 'christos-vasileiou/my-project2']
+        projects: ['christos-vasileiou/mobile-SRGAN', 'christos-vasileiou/vlsi-design', 'christos-vasileiou/forestland-fire-detection', 'christos-vasileiou/algorithms4logic-synth', 'christos-vasileiou/A-Sobel-filter-edge-detector-on-FPGA'], // List of repository names to display. example: ['christos-vasileiou/my-project1', 'christos-vasileiou/my-project2']
       },
     },
     external: {
@@ -33,20 +33,12 @@ const CONFIG = {
       // To hide the `External Projects` section, keep it empty.
       projects: [
         {
-          title: 'Project Name',
+          title: 'Forestland Fire Detection',
           description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
+            'Wildfires is a major social problem considering that the aftermath can be costly for the environment (losses of animals, properties, cultural heritage) as well as for the society, causing loss of human life. Many efforts have been made in order to develop applications or systems able to detect wildfires early and, thus, prevent or even limit their negative consequences. Using satellites may limit the frequency of wildfire detection and as a consequence the correct and timely assessment of the situation. The solution is to use a system capable of timely fire detection on the surface near the fire spot through visual stimulation, using the conjunction of two disciplines of the computer science. Artificial intelligence, (and specifically, computer vision) in conjunction with the deployment of hardware accelerators and embedded systems. My thesis is based on the architecture of the You-Only-Look-Once (YOLO) algorithm which is used to detect objects with specific features like color, shape, form, etc. The architecture acceleration runs on the Edge TPU of the Coral Dev Board device developed by Google, having the edge over other TPUs that it runs extremely power efficient.',
           imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
-        },
-        {
-          title: 'Project Name',
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-          imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
+            'https://github.com/christos-vasileiou/forestland-fire-detection/blob/master/my_data/fire_91.jpg?raw=true',
+          link: 'christos-vasileiou/forestland-fire-detection',
         },
       ],
     },
