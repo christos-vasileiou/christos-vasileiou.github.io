@@ -112,10 +112,10 @@ const CONFIG = {
   ],
   certifications: [
     {
-      name: 'Data Science: Transformers for Natural Language Processing',
-      body: 'Understood self-attention and in-depth theory behind transformers (encoder, decoder, and seq2seq architectures) and applied transformers to real-world tasks',
-      year: '2023',
-      link: 'https://drive.google.com/file/d/11H0HiFhwUFURELyV4Sg5eCpwMG7Od_pG/view?usp=sharing',
+      name: 'Artificial Intelligence 2.0: AI, Python, DRL',
+      body: 'Introduced to the Foundation Techniques of Deep Reinforcement Learning \& implementation of (Deep) Q-Learning, Policy Gradient, Actor Critic, Deep Deterministic Policy Gradient (DDPG), Twin-Delayed DDPG (TD3)',
+      year: '2024',
+      link: 'https://drive.google.com/file/d/1hwCb--ME7ki4XFXmI-BtNhQ2WOhb8zXj/view?usp=sharing',
     },
     {
       name: 'Generative AI with Large Language Models',
@@ -124,10 +124,10 @@ const CONFIG = {
       link: 'https://www.coursera.org/learn/generative-ai-with-llms/',
     },
     {
-      name: 'Artificial Intelligence 2.0: AI, Python, DRL',
-      body: 'Introduced to the Foundation Techniques of Deep Reinforcement Learning \& implementation of (Deep) Q-Learning, Policy Gradient, Actor Critic, Deep Deterministic Policy Gradient (DDPG), Twin-Delayed DDPG (TD3)',
-      year: '2024',
-      link: 'https://drive.google.com/file/d/1hwCb--ME7ki4XFXmI-BtNhQ2WOhb8zXj/view?usp=sharing',
+      name: 'Data Science: Transformers for Natural Language Processing',
+      body: 'Understood self-attention and in-depth theory behind transformers (encoder, decoder, and seq2seq architectures) and applied transformers to real-world tasks',
+      year: '2023',
+      link: 'https://drive.google.com/file/d/11H0HiFhwUFURELyV4Sg5eCpwMG7Od_pG/view?usp=sharing',
     },
   ],
   educations: [
