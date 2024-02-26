@@ -121,6 +121,24 @@ const CONFIG = {
       year: '2023',
       link: 'https://drive.google.com/file/d/11H0HiFhwUFURELyV4Sg5eCpwMG7Od_pG/view?usp=sharing',
     },
+    {
+      name: 'Structuring Machine Learning Projects',
+      body: '',
+      year: '2019',
+      link: 'https://drive.google.com/file/d/1b6lsacCXtEzgVcKRJt5E3cCfV2ecHM6D/view?usp=sharing',
+    },
+    {
+      name: 'Convolutional Neural Networks',
+      body: '',
+      year: '2019',
+      link: 'https://drive.google.com/file/d/1ipWQfDoHPk1TV243GiHldeY8fR0rjqak/view?usp=sharing',
+    },
+    {
+      name: 'Improving Deep Neural Networks: Hyperparameter Tuning, Regularization and Optimization',
+      body: '',
+      year: '2019',
+      link: 'https://drive.google.com/file/d/1Li7zLmvmWJx5Fdyfd1HAjLvSFvSN6mys/view?usp=sharing',
+    },
   ],
   educations: [
     {
