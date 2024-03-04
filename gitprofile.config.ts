@@ -60,6 +60,7 @@ const CONFIG = {
     linkedin: 'chrivasileiou',
     twitter: 'christos_vasil',
     mastodon: '',
+    researchGate: '',
     facebook: '',
     instagram: '',
     youtube: '', // example: 'pewdiepie'
