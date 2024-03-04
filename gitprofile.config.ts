@@ -33,20 +33,20 @@ const CONFIG = {
       // To hide the `External Projects` section, keep it empty.
       projects: [
         {
-          title: 'Forestland Fire Detection',
-          description:
-            'Wildfires is a major social problem considering that the aftermath can be costly for the environment (losses of animals, properties, cultural heritage) as well as for the society, causing loss of human life. Many efforts have been made in order to develop applications or systems able to detect wildfires early and, thus, prevent or even limit their negative consequences. Using satellites may limit the frequency of wildfire detection and as a consequence the correct and timely assessment of the situation. The solution is to use a system capable of timely fire detection on the surface near the fire spot through visual stimulation, using the conjunction of two disciplines of the computer science. Artificial intelligence, (and specifically, computer vision) in conjunction with the deployment of hardware accelerators and embedded systems. My thesis is based on the architecture of the You-Only-Look-Once (YOLO) algorithm which is used to detect objects with specific features like color, shape, form, etc. The architecture acceleration runs on the Edge TPU of the Coral Dev Board device developed by Google, having the edge over other TPUs that it runs extremely power efficient.',
-          imageUrl:
-            'https://github.com/christos-vasileiou/forestland-fire-detection/blob/master/my_data/fire_91.jpg?raw=true',
-          link: 'christos-vasileiou/forestland-fire-detection',
-        },
-        {
           title: 'Mobile-SRGAN',
           description:
             'We introduce an innovative super resolution approach to emerging modes of near-field synthetic aperture radar (SAR) imaging. Recent research extends convolutional neural network (CNN) architectures from the optical to the electromagnetic domain to achieve super resolution on images generated from radar signaling. Specifically, near-field synthetic aperture radar (SAR) imaging, a method for generating high-resolution images by scanning a radar across space to create a synthetic aperture, is of interest due to its high-fidelity spatial sensing capability, low cost devices, and large application space. Since SAR imaging requires large aperture sizes to achieve high resolution, super-resolution algorithms are valuable for many applications. Freehand smartphone SAR, an emerging sensing modality, requires irregular SAR apertures in the near-field and computation on mobile devices. Achieving efficient high-resolution SAR images from irregularly sampled data collected by freehand motion of a smartphone is a challenging task. In this paper, we propose a novel CNN architecture to achieve SAR image super-resolution for mobile applications by employing state-of-the-art SAR processing and deep learning techniques. The proposed algorithm is verified via simulation and an empirical study. Our algorithm demonstrates high-efficiency and high-resolution radar imaging for near-field scenarios with irregular scanning geometries.',
           imageUrl:
             'https://github.com/christos-vasileiou/mobile-SRGAN/blob/main/pics/flowchart.png?raw=true',
           link: 'christos-vasileiou/mobile-SRGAN',
+        },
+        {
+          title: 'Forestland Fire Detection',
+          description:
+            'Wildfires is a major social problem considering that the aftermath can be costly for the environment (losses of animals, properties, cultural heritage) as well as for the society, causing loss of human life. Many efforts have been made in order to develop applications or systems able to detect wildfires early and, thus, prevent or even limit their negative consequences. Using satellites may limit the frequency of wildfire detection and as a consequence the correct and timely assessment of the situation. The solution is to use a system capable of timely fire detection on the surface near the fire spot through visual stimulation, using the conjunction of two disciplines of the computer science. Artificial intelligence, (and specifically, computer vision) in conjunction with the deployment of hardware accelerators and embedded systems. My thesis is based on the architecture of the You-Only-Look-Once (YOLO) algorithm which is used to detect objects with specific features like color, shape, form, etc. The architecture acceleration runs on the Edge TPU of the Coral Dev Board device developed by Google, having the edge over other TPUs that it runs extremely power efficient.',
+          imageUrl:
+            'https://github.com/christos-vasileiou/forestland-fire-detection/blob/master/my_data/fire_91.jpg?raw=true',
+          link: 'christos-vasileiou/forestland-fire-detection',
         },
       ],
     },
