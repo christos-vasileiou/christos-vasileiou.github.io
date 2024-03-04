@@ -169,6 +169,17 @@ const CONFIG = {
       to: '2020',
     },
   ],
+  publications: [
+    {
+      title: 'Efficient CNN-Based Super Resolution Algorithms for Mmwave Mobile Radar Imaging',
+      conferenceName: 'ICIP 2022',
+      journalName: '',
+      authors: 'Christos Vasileiou, Josiah W. Smith, Shiva Thiagarajan, Matthew Nigh, Yiorgos Makris, Murat Torlak',
+      link: 'https://ieeexplore.ieee.org/document/9897190',
+      description:
+        'In this paper, we introduce the first CNN-based super resolution algorithm for mobile freehand SAR imaging in the near-field. Rather than training on randomly placed point targets, we improve upon previous work by incorporating solid, intricate objects in the simulation that are more representative of real-world scenarios. The proposed CNN algorithm is applied to images recovered by the EMPM algorithm [6] yielding high-resolution low-noise SAR images and outperforming previous techniques. The Mobile-SRGAN is the first SAR super resolution algorithm developed for freehand radar imaging, a more difficult task than traditional SAR super resolution, and efficiently recovers high-resolution images with low computational cost, deeming it fit for computationally constrained applications.',
+    },
+  ],
   // Display articles from your medium or dev account. (Optional)
   blog: {
     source: '', // medium | dev
