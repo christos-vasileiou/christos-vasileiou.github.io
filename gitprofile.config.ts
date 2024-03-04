@@ -173,7 +173,7 @@ const CONFIG = {
     {
       title: 'Efficient CNN-Based Super Resolution Algorithms for Mmwave Mobile Radar Imaging',
       conferenceName: 'ICIP 2022',
-      journalName: '',
+      journalName: 'Example',
       authors: 'Christos Vasileiou, Josiah W. Smith, Shiva Thiagarajan, Matthew Nigh, Yiorgos Makris, Murat Torlak',
       link: 'https://ieeexplore.ieee.org/document/9897190',
       description:
