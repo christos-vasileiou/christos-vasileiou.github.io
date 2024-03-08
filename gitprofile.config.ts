@@ -12,7 +12,7 @@ const CONFIG = {
   base: '/',
   projects: {
     github: {
-      display: false, // Display GitHub projects?
+      display: true, // Display GitHub projects?
       header: 'Github Projects',
       mode: 'manual', // Mode can be: 'automatic' or 'manual'
       automatic: {
@@ -25,7 +25,7 @@ const CONFIG = {
       },
       manual: {
         // Properties for manually specifying projects
-        projects: ['christos-vasileiou/vlsi-design', 'christos-vasileiou/algorithms4logic-synth', 'christos-vasileiou/A-Sobel-filter-edge-detector-on-FPGA'], // List of repository names to display. example: ['christos-vasileiou/my-project1', 'christos-vasileiou/my-project2']
+        projects: ['christos-vasileiou/atpgllm', 'christos-vasileiou/algorithms4logic-synth', 'christos-vasileiou/A-Sobel-filter-edge-detector-on-FPGA'], // List of repository names to display. example: ['christos-vasileiou/my-project1', 'christos-vasileiou/my-project2']
       },
     },
     external: {
@@ -240,13 +240,8 @@ const CONFIG = {
 
   // Optional Footer. Supports plain text or HTML.
   footer: `© 2024 Christos Vasileiou`,
-    //   `Made with <a 
-    //   class="text-primary" href="https://github.com/christos-vasileiou/gitprofile"
-    //   target="_blank"
-    //   rel="noreferrer"
-    // >GitProfile</a> and ❤️`,
 
-  enablePWA: true,
+  enablePWA: false,
 };
 
 export default CONFIG;
