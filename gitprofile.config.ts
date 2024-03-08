@@ -191,7 +191,7 @@ const CONFIG = {
   },
   // Track visitor interaction and behavior. https://www.hotjar.com
   hotjar: {
-    id: '',
+    id: '3876526',
     snippetVersion: 6,
   },
   themeConfig: {
