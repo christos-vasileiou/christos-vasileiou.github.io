@@ -86,6 +86,7 @@ const CONFIG = {
     'Git',
     'Tensorflow',
     'huggingface',
+    'LangChain',
     'scikit-learn',
     'C++',
     'MATLAB',
