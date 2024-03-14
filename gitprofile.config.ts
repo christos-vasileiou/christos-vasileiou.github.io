@@ -123,7 +123,7 @@ const CONFIG = {
       name: 'Generative AI with Large Language Models',
       body: 'Introduced to Parameter-efficient Fine Tuning (PEFT), Reinforcement learning from human feedback (RLHF), Chain-of-Thought Prompting (CoT) \& Retrieval Augmented Generation (RAG)',
       year: '2023',
-      link: 'https://www.coursera.org/learn/generative-ai-with-llms/',
+      link: 'https://drive.google.com/file/d/1LiSkURplKL7wwzsJA8hpjsnIJ5M6IFQ6/view?usp=sharing',
     },
     {
       name: 'Data Science: Transformers for Natural Language Processing',
