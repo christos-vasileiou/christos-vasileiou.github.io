@@ -99,6 +99,13 @@ const CONFIG = {
   experiences: [
     {
       company: 'Intel Corporation',
+      position: 'Technology CAD Software Research Engineer/Scientist',
+      from: 'May 2024',
+      to: 'Present',
+      companyLink: 'https://intel.com',
+    },
+    {
+      company: 'Intel Corporation',
       position: 'ML-Based Pathfinding Test Developer',
       from: 'May 2022',
       to: 'August 2022',
