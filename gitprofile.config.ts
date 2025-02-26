@@ -84,24 +84,22 @@ const CONFIG = {
     'C',
     'PyTorch',
     'Git',
-    'Tensorflow',
     'huggingface',
     'LangChain',
     'scikit-learn',
     'C++',
-    'MATLAB',
+    'Tensorflow',
     'Keras',
     'NLTK',
     'spaCy',
-    'R',
     'CUDA',
   ],
   experiences: [
     {
       company: 'Intel Corporation',
-      position: 'Technology CAD Software Research Engineer/Scientist',
+      position: 'Technology CAD Software Research Engineer/Scientist Internship',
       from: 'May 2024',
-      to: 'Present',
+      to: 'August 2024',
       companyLink: 'https://intel.com',
     },
     {
@@ -247,7 +245,7 @@ const CONFIG = {
   },
 
   // Optional Footer. Supports plain text or HTML.
-  footer: `© 2024 Christos Vasileiou`,
+  footer: `© 2025 Christos Vasileiou`,
 
   enablePWA: false,
 };
