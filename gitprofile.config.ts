@@ -12,7 +12,7 @@ const CONFIG = {
   base: '/',
   projects: {
     github: {
-      display: true, // Display GitHub projects?
+      display: false, // Display GitHub projects?
       header: 'Github Projects',
       mode: 'manual', // Mode can be: 'automatic' or 'manual'
       automatic: {
@@ -32,6 +32,14 @@ const CONFIG = {
       header: 'My Projects',
       // To hide the `External Projects` section, keep it empty.
       projects: [
+        {
+          title: 'Digitest.LLM',
+          description:
+            'A pilot study exploring whether Large Language Models (LLMs) can generate test vectors for stuck-at faults in gate-level combinational circuits. Unlike conventional ATPG, which relies on algorithmic Boolean reasoning, LLMs lack such capability. However, we hypothesize that a “language of test” exists, capable of capturing how input stimuli expose differences between fault-free and faulty netlist functionality - analogous to how natural language expresses meaning through symbol substitution. This stems from observing that netlists, like text, comprise functional paths of logic gates combining signals, akin to sentences combining words. To test this hypothesis, we generated 958K test vectors across 40K randomly generated combinational circuits, using fault-simulation results to fine-tune a 7 billion parameter Llama-2 model via Low-Rank Adaptation (LoRA), Supervised Fine-Tuning (SFT), and Group Relative Policy Optimization (GRPO) to mitigate hallucinations. On unseen netlists, the model generates test vectors for target faults with over 80\% success—far exceeding random test generation. While only preliminary, these findings suggest LLMs can learn this “language of test” and aid test generation, warranting further research into training, fine-tuning, and prompt engineering to boost accuracy and utility.',
+          imageUrl:
+            'https://github.com/christos-vasileiou/digitest.llm',
+          link: 'https://github.com/christos-vasileiou/digitest.llm',
+        },
         {
           title: 'Mobile-SRGAN',
           description:
@@ -98,6 +106,13 @@ const CONFIG = {
     {
       company: 'Intel Corporation',
       position: 'Technology CAD Software Research Engineer/Scientist Internship',
+      from: 'May 2025',
+      to: 'August 2025',
+      companyLink: 'https://intel.com',
+    },
+    {
+      company: 'Intel Corporation',
+      position: 'Technology CAD Software Research Engineer/Scientist Internship',
       from: 'May 2024',
       to: 'August 2024',
       companyLink: 'https://intel.com',
@@ -157,9 +172,9 @@ const CONFIG = {
   ],
   educations: [
     {
-      institution: 'University of Texas at Dallas (UTD)',
+      institution: 'University of California, San Diego (UCSD)',
       degree: 'PhD',
-      from: '2021',
+      from: '2025',
       to: 'Present',
     },
     {
@@ -170,12 +185,30 @@ const CONFIG = {
     },
     {
       institution: 'University of Thessaly, Volos, Greece',
-      degree: 'BS + MS',
+      degree: 'Integrated Master of Engineering',
       from: '2014',
       to: '2020',
     },
   ],
   publications: [
+    {
+      title: 'Teaching Llamas to Test: A Language-Based Approach',
+      conferenceName: '2025 IEEE International Test Conference (ITC)',
+      journalName: '',
+      authors: 'Christos Vasileiou, Yiorgos Makris',
+      link: '',
+      description:
+        'A pilot study exploring whether Large Language Models (LLMs) can generate test vectors for stuck-at faults in gate-level combinational circuits. Unlike conventional ATPG, which relies on algorithmic Boolean reasoning, LLMs lack such capability. However, we hypothesize that a “language of test” exists, capable of capturing how input stimuli expose differences between fault-free and faulty netlist functionality - analogous to how natural language expresses meaning through symbol substitution. This stems from observing that netlists, like text, comprise functional paths of logic gates combining signals, akin to sentences combining words. To test this hypothesis, we generated 958K test vectors across 40K randomly generated combinational circuits, using fault-simulation results to fine-tune a 7 billion parameter Llama-2 model via Low-Rank Adaptation (LoRA), Supervised Fine-Tuning (SFT), and Group Relative Policy Optimization (GRPO) to mitigate hallucinations. On unseen netlists, the model generates test vectors for target faults with over 80\% success—far exceeding random test generation. While only preliminary, these findings suggest LLMs can learn this “language of test” and aid test generation, warranting further research into training, fine-tuning, and prompt engineering to boost accuracy and utility.',
+    },
+    {
+      title: 'Unveiling the Mask: Trusted Semiconductor Manufacturing through Wafer-Level Mask-Set Attestation',
+      conferenceName: '2025 IEEE International Conference Computer-Aided Design (ICCAD)',
+      journalName: '',
+      authors: 'Suraag Telakulla, Ching-Yi Chang, Matthew Nigh, Christos Vasileiou, Yiorgos Makris',
+      link: '',
+      description:
+        'We introduce machine learning-based solutions for differentiating wafers fabricated using trusted and untrusted mask-sets based on the typical metrology or wafer acceptance tests collected during semiconductor manufacturing and testing. Our methods leverage the systematic nature of process variation and capture the subtle causality between mask modifications and either physical dimensions or electrical characteristics of the produced silicon, which can then be used for the purpose of wafer-level mask-set attestation. Effectiveness of our solutions is demonstrated on a dataset of inline and e-test measurements from 8000 wafers fabricated with multiple variants of a mask-set in the GlobalFoundries 12LP FinFET technology node.',
+    },
     {
       title: 'Efficient CNN-Based Super Resolution Algorithms for Mmwave Mobile Radar Imaging',
       conferenceName: '2022 IEEE International Conference on Image Processing (ICIP)',
