@@ -196,7 +196,7 @@ const CONFIG = {
       conferenceName: '2025 IEEE International Test Conference (ITC)',
       journalName: '',
       authors: 'Christos Vasileiou, Yiorgos Makris',
-      link: '',
+      link: 'https://ieeexplore.ieee.org/document/11219864',
       description:
         'A pilot study exploring whether Large Language Models (LLMs) can generate test vectors for stuck-at faults in gate-level combinational circuits. Unlike conventional ATPG, which relies on algorithmic Boolean reasoning, LLMs lack such capability. However, we hypothesize that a “language of test” exists, capable of capturing how input stimuli expose differences between fault-free and faulty netlist functionality - analogous to how natural language expresses meaning through symbol substitution. This stems from observing that netlists, like text, comprise functional paths of logic gates combining signals, akin to sentences combining words. To test this hypothesis, we generated 958K test vectors across 40K randomly generated combinational circuits, using fault-simulation results to fine-tune a 7 billion parameter Llama-2 model via Low-Rank Adaptation (LoRA), Supervised Fine-Tuning (SFT), and Group Relative Policy Optimization (GRPO) to mitigate hallucinations. On unseen netlists, the model generates test vectors for target faults with over 80\% success—far exceeding random test generation. While only preliminary, these findings suggest LLMs can learn this “language of test” and aid test generation, warranting further research into training, fine-tuning, and prompt engineering to boost accuracy and utility.',
     },
@@ -205,7 +205,7 @@ const CONFIG = {
       conferenceName: '2025 IEEE International Conference Computer-Aided Design (ICCAD)',
       journalName: '',
       authors: 'Suraag Telakulla, Ching-Yi Chang, Matthew Nigh, Christos Vasileiou, Yiorgos Makris',
-      link: '',
+      link: 'https://www.researchgate.net/profile/Ching-Yi-Chang-4/publication/396514306_Unveiling_the_Mask_Trusted_Semiconductor_Manufacturing_through_Wafer-Level_Mask-Set_Attestation/links/68efee2702d6215259bbff75/Unveiling-the-Mask-Trusted-Semiconductor-Manufacturing-through-Wafer-Level-Mask-Set-Attestation.pdf',
       description:
         'We introduce machine learning-based solutions for differentiating wafers fabricated using trusted and untrusted mask-sets based on the typical metrology or wafer acceptance tests collected during semiconductor manufacturing and testing. Our methods leverage the systematic nature of process variation and capture the subtle causality between mask modifications and either physical dimensions or electrical characteristics of the produced silicon, which can then be used for the purpose of wafer-level mask-set attestation. Effectiveness of our solutions is demonstrated on a dataset of inline and e-test measurements from 8000 wafers fabricated with multiple variants of a mask-set in the GlobalFoundries 12LP FinFET technology node.',
     },
