@@ -25,7 +25,11 @@ const CONFIG = {
       },
       manual: {
         // Properties for manually specifying projects
-        projects: ['christos-vasileiou/atpgllm', 'christos-vasileiou/logic-synth-ic', 'christos-vasileiou/sobel-filter-FPGA'], // List of repository names to display. example: ['christos-vasileiou/my-project1', 'christos-vasileiou/my-project2']
+        projects: [
+          'christos-vasileiou/atpgllm',
+          'christos-vasileiou/logic-synth-ic',
+          'christos-vasileiou/sobel-filter-FPGA',
+        ], // List of repository names to display. example: ['christos-vasileiou/my-project1', 'christos-vasileiou/my-project2']
       },
     },
     external: {
@@ -35,18 +39,15 @@ const CONFIG = {
         {
           title: 'Digitest.LLM',
           description:
-            'A pilot study exploring whether Large Language Models (LLMs) can generate test vectors for stuck-at faults in gate-level combinational circuits. Unlike conventional ATPG, which relies on algorithmic Boolean reasoning, LLMs lack such capability. However, we hypothesize that a “language of test” exists, capable of capturing how input stimuli expose differences between fault-free and faulty netlist functionality - analogous to how natural language expresses meaning through symbol substitution. This stems from observing that netlists, like text, comprise functional paths of logic gates combining signals, akin to sentences combining words. To test this hypothesis, we generated 958K test vectors across 40K randomly generated combinational circuits, using fault-simulation results to fine-tune a 7 billion parameter Llama-2 model via Low-Rank Adaptation (LoRA), Supervised Fine-Tuning (SFT), and Group Relative Policy Optimization (GRPO) to mitigate hallucinations. On unseen netlists, the model generates test vectors for target faults with over 80\% success—far exceeding random test generation. While only preliminary, these findings suggest LLMs can learn this “language of test” and aid test generation, warranting further research into training, fine-tuning, and prompt engineering to boost accuracy and utility.',
-          imageUrl:
-            'https://github.com/christos-vasileiou/digitest.llm',
+            'A pilot study exploring whether Large Language Models (LLMs) can generate test vectors for stuck-at faults in gate-level combinational circuits. Unlike conventional ATPG, which relies on algorithmic Boolean reasoning, LLMs lack such capability. However, we hypothesize that a “language of test” exists, capable of capturing how input stimuli expose differences between fault-free and faulty netlist functionality - analogous to how natural language expresses meaning through symbol substitution. This stems from observing that netlists, like text, comprise functional paths of logic gates combining signals, akin to sentences combining words. To test this hypothesis, we generated 958K test vectors across 40K randomly generated combinational circuits, using fault-simulation results to fine-tune a 7 billion parameter Llama-2 model via Low-Rank Adaptation (LoRA), Supervised Fine-Tuning (SFT), and Group Relative Policy Optimization (GRPO) to mitigate hallucinations. On unseen netlists, the model generates test vectors for target faults with over 80% success—far exceeding random test generation. While only preliminary, these findings suggest LLMs can learn this “language of test” and aid test generation, warranting further research into training, fine-tuning, and prompt engineering to boost accuracy and utility.',
           link: 'https://github.com/christos-vasileiou/digitest.llm',
         },
         {
           title: 'Mobile-SRGAN',
           description:
             'We introduce an innovative super resolution approach to emerging modes of near-field synthetic aperture radar (SAR) imaging. Recent research extends convolutional neural network (CNN) architectures from the optical to the electromagnetic domain to achieve super resolution on images generated from radar signaling. Specifically, near-field synthetic aperture radar (SAR) imaging, a method for generating high-resolution images by scanning a radar across space to create a synthetic aperture, is of interest due to its high-fidelity spatial sensing capability, low cost devices, and large application space. Since SAR imaging requires large aperture sizes to achieve high resolution, super-resolution algorithms are valuable for many applications. Freehand smartphone SAR, an emerging sensing modality, requires irregular SAR apertures in the near-field and computation on mobile devices. Achieving efficient high-resolution SAR images from irregularly sampled data collected by freehand motion of a smartphone is a challenging task. In this paper, we propose a novel CNN architecture to achieve SAR image super-resolution for mobile applications by employing state-of-the-art SAR processing and deep learning techniques. The proposed algorithm is verified via simulation and an empirical study. Our algorithm demonstrates high-efficiency and high-resolution radar imaging for near-field scenarios with irregular scanning geometries.',
-          imageUrl:
-            'https://github.com/christos-vasileiou/mobile-SRGAN/blob/main/pics/flowchart.png?raw=true',
-          link: 'https://github.com/christos-vasileiou/mobile-SRGAN',
+          imageUrl: '/projects/mobile-srgan.jpg',
+          link: 'https://ieeexplore.ieee.org/document/9897190',
         },
         {
           title: 'Forestland Fire Detection',
@@ -61,8 +62,9 @@ const CONFIG = {
   },
   seo: {
     title: 'Portfolio of Christos Vasileiou',
-    description: '',
-    imageURL: '',
+    description:
+      'Christos Vasileiou is a PhD student at UC San Diego working on machine learning for hardware test, EDA, and semiconductor manufacturing.',
+    imageURL: 'https://avatars.githubusercontent.com/u/9371628?v=4',
   },
   social: {
     linkedin: 'chrivasileiou',
@@ -105,14 +107,16 @@ const CONFIG = {
   experiences: [
     {
       company: 'Intel Corporation',
-      position: 'Technology CAD Software Research Engineer/Scientist Internship',
+      position:
+        'Technology CAD Software Research Engineer/Scientist Internship',
       from: 'May 2025',
       to: 'August 2025',
       companyLink: 'https://intel.com',
     },
     {
       company: 'Intel Corporation',
-      position: 'Technology CAD Software Research Engineer/Scientist Internship',
+      position:
+        'Technology CAD Software Research Engineer/Scientist Internship',
       from: 'May 2024',
       to: 'August 2024',
       companyLink: 'https://intel.com',
@@ -135,13 +139,13 @@ const CONFIG = {
   certifications: [
     {
       name: 'Artificial Intelligence 2.0: AI, Python, DRL',
-      body: 'Introduced to the Foundation Techniques of Deep Reinforcement Learning \& implementation of (Deep) Q-Learning, Policy Gradient, Actor Critic, Deep Deterministic Policy Gradient (DDPG), Twin-Delayed DDPG (TD3)',
+      body: 'Introduced to the Foundation Techniques of Deep Reinforcement Learning & implementation of (Deep) Q-Learning, Policy Gradient, Actor Critic, Deep Deterministic Policy Gradient (DDPG), Twin-Delayed DDPG (TD3)',
       year: '2024',
       link: 'https://drive.google.com/file/d/1hwCb--ME7ki4XFXmI-BtNhQ2WOhb8zXj/view?usp=sharing',
     },
     {
       name: 'Generative AI with Large Language Models',
-      body: 'Introduced to Parameter-efficient Fine Tuning (PEFT), Reinforcement learning from human feedback (RLHF), Chain-of-Thought Prompting (CoT) \& Retrieval Augmented Generation (RAG)',
+      body: 'Introduced to Parameter-efficient Fine Tuning (PEFT), Reinforcement learning from human feedback (RLHF), Chain-of-Thought Prompting (CoT) & Retrieval Augmented Generation (RAG)',
       year: '2023',
       link: 'https://drive.google.com/file/d/1LiSkURplKL7wwzsJA8hpjsnIJ5M6IFQ6/view?usp=sharing',
     },
@@ -198,22 +202,28 @@ const CONFIG = {
       authors: 'Christos Vasileiou, Yiorgos Makris',
       link: 'https://ieeexplore.ieee.org/document/11219864',
       description:
-        'A pilot study exploring whether Large Language Models (LLMs) can generate test vectors for stuck-at faults in gate-level combinational circuits. Unlike conventional ATPG, which relies on algorithmic Boolean reasoning, LLMs lack such capability. However, we hypothesize that a “language of test” exists, capable of capturing how input stimuli expose differences between fault-free and faulty netlist functionality - analogous to how natural language expresses meaning through symbol substitution. This stems from observing that netlists, like text, comprise functional paths of logic gates combining signals, akin to sentences combining words. To test this hypothesis, we generated 958K test vectors across 40K randomly generated combinational circuits, using fault-simulation results to fine-tune a 7 billion parameter Llama-2 model via Low-Rank Adaptation (LoRA), Supervised Fine-Tuning (SFT), and Group Relative Policy Optimization (GRPO) to mitigate hallucinations. On unseen netlists, the model generates test vectors for target faults with over 80\% success—far exceeding random test generation. While only preliminary, these findings suggest LLMs can learn this “language of test” and aid test generation, warranting further research into training, fine-tuning, and prompt engineering to boost accuracy and utility.',
+        'A pilot study exploring whether Large Language Models (LLMs) can generate test vectors for stuck-at faults in gate-level combinational circuits. Unlike conventional ATPG, which relies on algorithmic Boolean reasoning, LLMs lack such capability. However, we hypothesize that a “language of test” exists, capable of capturing how input stimuli expose differences between fault-free and faulty netlist functionality - analogous to how natural language expresses meaning through symbol substitution. This stems from observing that netlists, like text, comprise functional paths of logic gates combining signals, akin to sentences combining words. To test this hypothesis, we generated 958K test vectors across 40K randomly generated combinational circuits, using fault-simulation results to fine-tune a 7 billion parameter Llama-2 model via Low-Rank Adaptation (LoRA), Supervised Fine-Tuning (SFT), and Group Relative Policy Optimization (GRPO) to mitigate hallucinations. On unseen netlists, the model generates test vectors for target faults with over 80% success—far exceeding random test generation. While only preliminary, these findings suggest LLMs can learn this “language of test” and aid test generation, warranting further research into training, fine-tuning, and prompt engineering to boost accuracy and utility.',
     },
     {
-      title: 'Unveiling the Mask: Trusted Semiconductor Manufacturing through Wafer-Level Mask-Set Attestation',
-      conferenceName: '2025 IEEE International Conference Computer-Aided Design (ICCAD)',
+      title:
+        'Unveiling the Mask: Trusted Semiconductor Manufacturing through Wafer-Level Mask-Set Attestation',
+      conferenceName:
+        '2025 IEEE International Conference Computer-Aided Design (ICCAD)',
       journalName: '',
-      authors: 'Suraag Telakulla, Ching-Yi Chang, Matthew Nigh, Christos Vasileiou, Yiorgos Makris',
+      authors:
+        'Suraag Telakulla, Ching-Yi Chang, Matthew Nigh, Christos Vasileiou, Yiorgos Makris',
       link: 'https://www.researchgate.net/profile/Ching-Yi-Chang-4/publication/396514306_Unveiling_the_Mask_Trusted_Semiconductor_Manufacturing_through_Wafer-Level_Mask-Set_Attestation/links/68efee2702d6215259bbff75/Unveiling-the-Mask-Trusted-Semiconductor-Manufacturing-through-Wafer-Level-Mask-Set-Attestation.pdf',
       description:
         'We introduce machine learning-based solutions for differentiating wafers fabricated using trusted and untrusted mask-sets based on the typical metrology or wafer acceptance tests collected during semiconductor manufacturing and testing. Our methods leverage the systematic nature of process variation and capture the subtle causality between mask modifications and either physical dimensions or electrical characteristics of the produced silicon, which can then be used for the purpose of wafer-level mask-set attestation. Effectiveness of our solutions is demonstrated on a dataset of inline and e-test measurements from 8000 wafers fabricated with multiple variants of a mask-set in the GlobalFoundries 12LP FinFET technology node.',
     },
     {
-      title: 'Efficient CNN-Based Super Resolution Algorithms for Mmwave Mobile Radar Imaging',
-      conferenceName: '2022 IEEE International Conference on Image Processing (ICIP)',
+      title:
+        'Efficient CNN-Based Super Resolution Algorithms for Mmwave Mobile Radar Imaging',
+      conferenceName:
+        '2022 IEEE International Conference on Image Processing (ICIP)',
       journalName: '',
-      authors: 'Christos Vasileiou, Josiah W. Smith, Shiva Thiagarajan, Matthew Nigh, Yiorgos Makris, Murat Torlak',
+      authors:
+        'Christos Vasileiou, Josiah W. Smith, Shiva Thiagarajan, Matthew Nigh, Yiorgos Makris, Murat Torlak',
       link: 'https://ieeexplore.ieee.org/document/9897190',
       description:
         'In this paper, we introduce the first CNN-based super resolution algorithm for mobile freehand SAR imaging in the near-field. Rather than training on randomly placed point targets, we improve upon previous work by incorporating solid, intricate objects in the simulation that are more representative of real-world scenarios. The proposed CNN algorithm is applied to images recovered by the EMPM algorithm yielding high-resolution low-noise SAR images and outperforming previous techniques. The Mobile-SRGAN is the first SAR super resolution algorithm developed for freehand radar imaging, a more difficult task than traditional SAR super resolution, and efficiently recovers high-resolution images with low computational cost, deeming it fit for computationally constrained applications.',
@@ -256,7 +266,7 @@ const CONFIG = {
       'synthwave',
       'halloween',
       'forest',
-      'Luxury',
+      'luxury',
       'business',
       'night',
       'dim',
@@ -278,7 +288,7 @@ const CONFIG = {
   },
 
   // Optional Footer. Supports plain text or HTML.
-  footer: `© 2025 Christos Vasileiou`,
+  footer: `© ${new Date().getFullYear()} Christos Vasileiou`,
 
   enablePWA: false,
 };
