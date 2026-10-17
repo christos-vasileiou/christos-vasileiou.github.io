@@ -121,8 +121,8 @@ const CONFIG = {
     email: 'chrivasileiou2@gmail.com',
   },
   resume: {
-    fileUrl:
-      'https://drive.google.com/file/d/1a8gKO3nJnQYRN1qHmhzsYyNWcMoOIwqG/view?usp=sharing', // Empty fileUrl will hide the `Download Resume` button.
+    // Generic CV, compiled from curriculum_vitae/Christos_Vasileiou_Generic.tex (web copy: no phone number).
+    fileUrl: '/Christos_Vasileiou_CV.pdf', // Empty fileUrl will hide the `Download Resume` button.
   },
   skills: [
     'Python',

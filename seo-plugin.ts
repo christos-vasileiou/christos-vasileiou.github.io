@@ -153,7 +153,7 @@ const staticContent = (): string => {
       <h2>Projects</h2><ul>${projects}</ul>
       <h2>Experience</h2><ul>${experience}</ul>
       <h2>Education</h2><ul>${education}</ul>
-      <h2>Profiles</h2><p>${profiles}</p>
+      <h2>Profiles</h2><p>${profiles}${CONFIG.resume?.fileUrl ? ` · <a href="${esc(CONFIG.resume.fileUrl)}">CV (PDF)</a>` : ''}</p>
     </main>`;
 };
 
