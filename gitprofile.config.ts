@@ -250,10 +250,10 @@ const CONFIG = {
   // Privacy-friendly visitor counter. Create a free site at https://www.goatcounter.com
   // and put its code here (the "mysite" in mysite.goatcounter.com).
   goatcounter: {
-    code: '',
+    code: 'christos-vasileiou',
   },
   googleAnalytics: {
-    id: '', // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
+    id: 'G-7VCCZ9Z2WP', // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
   },
   // Track visitor interaction and behavior. https://www.hotjar.com
   hotjar: {

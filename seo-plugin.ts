@@ -5,7 +5,7 @@
 //   - builds the <head> tags (canonical, Open Graph, verification, JSON-LD Person),
 //   - renders the key profile content as static HTML inside #root (React replaces it
 //     on load, so visitors see the normal site; crawlers that don't run JS see text),
-//   - adds the GoatCounter visitor counter when configured,
+//   - adds Google Analytics and the GoatCounter visitor counter when configured,
 //   - emits sitemap.xml.
 import type { Plugin } from 'vite';
 import CONFIG from './gitprofile.config';
@@ -93,6 +93,15 @@ const headTags = (): string => {
   tags.push(
     `<script type="application/ld+json">${JSON.stringify(structuredData).replace(/</g, '\\u003c')}</script>`,
   );
+  // Google Analytics goes in the static HTML (not added later by React) so Google's
+  // tag checker sees it and it can also verify the site in Search Console.
+  const gaId = CONFIG.googleAnalytics?.id;
+  if (gaId) {
+    tags.push(
+      `<script async src="https://www.googletagmanager.com/gtag/js?id=${esc(gaId)}"></script>`,
+      `<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config',${JSON.stringify(gaId)});</script>`,
+    );
+  }
   if (CONFIG.goatcounter?.code) {
     tags.push(
       `<script data-goatcounter="https://${esc(CONFIG.goatcounter.code)}.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>`,
