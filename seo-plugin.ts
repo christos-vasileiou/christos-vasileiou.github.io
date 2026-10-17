@@ -31,6 +31,8 @@ const socialProfiles = [
   CONFIG.social.linkedin &&
     `https://www.linkedin.com/in/${CONFIG.social.linkedin}`,
   CONFIG.social.twitter && `https://x.com/${CONFIG.social.twitter}`,
+  CONFIG.social.googleScholar &&
+    `https://scholar.google.com/citations?user=${CONFIG.social.googleScholar}`,
   CONFIG.social.researchGate &&
     `https://www.researchgate.net/profile/${CONFIG.social.researchGate}`,
   ...(seo.sameAs || []),
@@ -132,7 +134,12 @@ const staticContent = (): string => {
     )
     .join('');
   const projects = CONFIG.projects.external.projects
-    .map((p) => `<li><a href="${esc(p.link)}">${esc(p.title)}</a></li>`)
+    .map((p: { title: string; description?: string; link?: string }) => {
+      const title = p.link
+        ? `<a href="${esc(p.link)}">${esc(p.title)}</a>`
+        : esc(p.title);
+      return `<li>${title}${p.description ? ` — ${esc(p.description)}` : ''}</li>`;
+    })
     .join('');
   const profiles = socialProfiles
     .map((url) => link(url, url.replace(/^https?:\/\/(www\.)?/, '')))

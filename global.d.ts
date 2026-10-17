@@ -79,7 +79,7 @@ interface ExternalProjects {
     title: string;
     description?: string;
     imageUrl?: string;
-    link: string;
+    link?: string;
   }[];
 }
 
@@ -163,6 +163,11 @@ interface Social {
    * ResearchGate username
    */
   researchGate?: string;
+
+  /**
+   * Google Scholar user id (the `user=` value in the profile URL)
+   */
+  googleScholar?: string;
 
   /**
    * Facebook

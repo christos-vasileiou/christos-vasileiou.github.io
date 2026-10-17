@@ -31,30 +31,44 @@ const CONFIG = {
     external: {
       header: 'My Projects',
       // To hide the `External Projects` section, keep it empty.
+      // `link` is optional: leave it out for private repositories.
       projects: [
         {
-          title: 'Digitest.LLM',
+          title: 'ATPG-LLM: The Language of Test',
           description:
-            'A pilot study exploring whether Large Language Models (LLMs) can generate test vectors for stuck-at faults in gate-level combinational circuits. Unlike conventional ATPG, which relies on algorithmic Boolean reasoning, LLMs lack such capability. However, we hypothesize that a “language of test” exists, capable of capturing how input stimuli expose differences between fault-free and faulty netlist functionality - analogous to how natural language expresses meaning through symbol substitution. This stems from observing that netlists, like text, comprise functional paths of logic gates combining signals, akin to sentences combining words. To test this hypothesis, we generated 958K test vectors across 40K randomly generated combinational circuits, using fault-simulation results to fine-tune a 7 billion parameter Llama-2 model via Low-Rank Adaptation (LoRA), Supervised Fine-Tuning (SFT), and Group Relative Policy Optimization (GRPO) to mitigate hallucinations. On unseen netlists, the model generates test vectors for target faults with over 80\% success—far exceeding random test generation. While only preliminary, these findings suggest LLMs can learn this “language of test” and aid test generation, warranting further research into training, fine-tuning, and prompt engineering to boost accuracy and utility.',
-          imageUrl:
-            'https://github.com/christos-vasileiou/digitest.llm',
-          link: 'https://github.com/christos-vasileiou/digitest.llm',
+            'Teaching large language models to generate test patterns for integrated circuits. Open LLMs (IBM Granite, Qwen) are fine-tuned to produce test vectors that detect target faults in gate-level netlists, first with supervised fine-tuning and then with reinforcement learning using Group reward-Decoupled Normalization Policy Optimization (GDPO), a GRPO variant, with fault-simulation rewards. Includes graph neural network netlist encoders and simulator-verified best-of-N and search-based decoding.',
+          link: 'https://github.com/christos-vasileiou/atpgllm',
+        },
+        {
+          title: 'ASAP7 Language of Test Dataset',
+          description:
+            'End-to-end pipeline that builds the training data for ATPG-LLM: open RTL Verilog designs are synthesized to gate-level netlists on the ASAP7 7nm PDK with Synopsys Design Compiler and checked with Formality, test patterns and faults are generated with TetraMAX ATPG and fault simulation, and the results are converted into fault-aware LLM training examples.',
+          link: 'https://github.com/christos-vasileiou/asap7-language-of-test',
+        },
+        {
+          title: 'Robust Mask Scheduler',
+          description:
+            'Machine learning planner that recommends the next mask-set action for a semiconductor lot. It uses inline metrology already collected to score the remaining feasible mask paths, with gradient-boosted virtual-metrology models and a causal transformer over the inline measurements.',
         },
         {
           title: 'Mobile-SRGAN',
           description:
-            'We introduce an innovative super resolution approach to emerging modes of near-field synthetic aperture radar (SAR) imaging. Recent research extends convolutional neural network (CNN) architectures from the optical to the electromagnetic domain to achieve super resolution on images generated from radar signaling. Specifically, near-field synthetic aperture radar (SAR) imaging, a method for generating high-resolution images by scanning a radar across space to create a synthetic aperture, is of interest due to its high-fidelity spatial sensing capability, low cost devices, and large application space. Since SAR imaging requires large aperture sizes to achieve high resolution, super-resolution algorithms are valuable for many applications. Freehand smartphone SAR, an emerging sensing modality, requires irregular SAR apertures in the near-field and computation on mobile devices. Achieving efficient high-resolution SAR images from irregularly sampled data collected by freehand motion of a smartphone is a challenging task. In this paper, we propose a novel CNN architecture to achieve SAR image super-resolution for mobile applications by employing state-of-the-art SAR processing and deep learning techniques. The proposed algorithm is verified via simulation and an empirical study. Our algorithm demonstrates high-efficiency and high-resolution radar imaging for near-field scenarios with irregular scanning geometries.',
-          imageUrl:
-            'https://github.com/christos-vasileiou/mobile-SRGAN/blob/main/pics/flowchart.png?raw=true',
-          link: 'https://github.com/christos-vasileiou/mobile-SRGAN',
+            'The first CNN-based super-resolution algorithm for freehand smartphone mmWave synthetic aperture radar (SAR) imaging in the near field. It recovers high-resolution, low-noise images from irregularly sampled radar data at low computational cost, suited to mobile devices. Published at IEEE ICIP 2022.',
+          imageUrl: '/projects/mobile-srgan.png',
+          link: 'https://ieeexplore.ieee.org/document/9897190',
         },
         {
           title: 'Forestland Fire Detection',
           description:
-            'Wildfires is a major social problem considering that the aftermath can be costly for the environment (losses of animals, properties, cultural heritage) as well as for the society, causing loss of human life. Many efforts have been made in order to develop applications or systems able to detect wildfires early and, thus, prevent or even limit their negative consequences. Using satellites may limit the frequency of wildfire detection and as a consequence the correct and timely assessment of the situation. The solution is to use a system capable of timely fire detection on the surface near the fire spot through visual stimulation, using the conjunction of two disciplines of the computer science. Artificial intelligence, (and specifically, computer vision) in conjunction with the deployment of hardware accelerators and embedded systems. My thesis is based on the architecture of the You-Only-Look-Once (YOLO) algorithm which is used to detect objects with specific features like color, shape, form, etc. The architecture acceleration runs on the Edge TPU of the Coral Dev Board device developed by Google, having the edge over other TPUs that it runs extremely power efficient.',
-          imageUrl:
-            'https://github.com/christos-vasileiou/forestland-fire-detection/blob/master/my_data/fire_91.jpg?raw=true',
+            'Early wildfire detection on low-power edge hardware: a YOLOv3 object detector trained to recognize fire and smoke, accelerated on the Edge TPU of the Google Coral Dev Board. Diploma thesis at the University of Thessaly.',
+          imageUrl: '/projects/forestland-fire-detection.jpg',
           link: 'https://github.com/christos-vasileiou/forestland-fire-detection',
+        },
+        {
+          title: 'Logic Synthesis for IC Design',
+          description:
+            'Logic synthesis algorithms in C, built as an extension of a custom Tcl shell: cube and sum-of-products operations (intersection, cover, sharp), kernel extraction, algebraic division, and critical-path analysis on circuit graphs. Coursework for CAD Algorithms (ECE431) at the University of Thessaly.',
+          link: 'https://github.com/christos-vasileiou/logic-synth-ic',
         },
       ],
     },
@@ -91,6 +105,7 @@ const CONFIG = {
     twitter: 'christos_vasil',
     mastodon: '',
     researchGate: '',
+    googleScholar: 'ItNkOOYAAAAJ', // the user= value from your Google Scholar profile URL
     facebook: '',
     instagram: '',
     youtube: '', // example: 'pewdiepie'
