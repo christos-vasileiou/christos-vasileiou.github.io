@@ -60,9 +60,31 @@ const CONFIG = {
     },
   },
   seo: {
-    title: 'Portfolio of Christos Vasileiou',
-    description: '',
-    imageURL: '',
+    title: 'Christos Vasileiou | PhD Student, UC San Diego',
+    description:
+      'Christos Vasileiou, PhD student at UC San Diego, researching large language models and reinforcement learning for automatic test pattern generation (ATPG) of integrated circuits.',
+    imageURL: 'https://github.com/christos-vasileiou.png?size=460',
+    // Public URL of the site, used for the canonical link, sitemap and structured data.
+    siteUrl: 'https://christos-vasileiou.github.io/',
+    // Short line shown under your name in search-friendly page content.
+    tagline:
+      'PhD student at UC San Diego · LLMs & reinforcement learning for IC test generation (ATPG)',
+    // Topics added to structured data so search engines associate them with your name.
+    knowsAbout: [
+      'Large Language Models',
+      'Reinforcement Learning',
+      'Automatic Test Pattern Generation',
+      'Electronic Design Automation',
+      'Integrated Circuit Testing',
+      'Machine Learning',
+    ],
+    // Other profiles of yours (Google Scholar, ORCID, ResearchGate, ...). GitHub, LinkedIn
+    // and Twitter/X from `social` are added automatically.
+    sameAs: [] as string[],
+    // Google Search Console > Add property > URL prefix > "HTML tag": paste only the content="..." value.
+    googleSiteVerification: '',
+    // Bing Webmaster Tools > "HTML Meta Tag": paste only the content="..." value.
+    bingSiteVerification: '',
   },
   social: {
     linkedin: 'chrivasileiou',
@@ -225,6 +247,11 @@ const CONFIG = {
     username: '', // to hide blog section, keep it empty
     limit: 3, // How many articles to display. Max is 10.
   },
+  // Privacy-friendly visitor counter. Create a free site at https://www.goatcounter.com
+  // and put its code here (the "mysite" in mysite.goatcounter.com).
+  goatcounter: {
+    code: '',
+  },
   googleAnalytics: {
     id: '', // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
   },
@@ -278,7 +305,7 @@ const CONFIG = {
   },
 
   // Optional Footer. Supports plain text or HTML.
-  footer: `© 2025 Christos Vasileiou`,
+  footer: `© 2026 Christos Vasileiou`,
 
   enablePWA: false,
 };

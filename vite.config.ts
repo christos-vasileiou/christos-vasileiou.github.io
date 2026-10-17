@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react';
 import { VitePWA } from 'vite-plugin-pwa';
 import CONFIG from './gitprofile.config';
 import { createHtmlPlugin } from 'vite-plugin-html';
+import { seoHtmlData, sitemapPlugin } from './seo-plugin';
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -15,9 +16,11 @@ export default defineConfig({
           metaTitle: CONFIG.seo.title,
           metaDescription: CONFIG.seo.description,
           metaImageURL: CONFIG.seo.imageURL,
+          ...seoHtmlData(),
         },
       },
     }),
+    sitemapPlugin(),
     ...(CONFIG.enablePWA
       ? [
           VitePWA({
