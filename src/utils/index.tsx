@@ -10,9 +10,15 @@ import { hotjar } from 'react-hotjar';
 import colors from '../data/colors.json';
 
 export const isDarkishTheme = (appliedTheme: string): boolean => {
-  return ['dark', 'halloween', 'forest', 'black', 'luxury', 'dracula'].includes(
-    appliedTheme,
-  );
+  return [
+    'dark',
+    'halloween',
+    'forest',
+    'black',
+    'luxury',
+    'dracula',
+    'procyon',
+  ].includes(appliedTheme);
 };
 
 type EventParams = {

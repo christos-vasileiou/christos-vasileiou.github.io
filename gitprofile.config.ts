@@ -25,7 +25,11 @@ const CONFIG = {
       },
       manual: {
         // Properties for manually specifying projects
-        projects: ['christos-vasileiou/atpgllm', 'christos-vasileiou/logic-synth-ic', 'christos-vasileiou/sobel-filter-FPGA'], // List of repository names to display. example: ['christos-vasileiou/my-project1', 'christos-vasileiou/my-project2']
+        projects: [
+          'christos-vasileiou/atpgllm',
+          'christos-vasileiou/logic-synth-ic',
+          'christos-vasileiou/sobel-filter-FPGA',
+        ], // List of repository names to display. example: ['christos-vasileiou/my-project1', 'christos-vasileiou/my-project2']
       },
     },
     external: {
@@ -131,25 +135,27 @@ const CONFIG = {
     'Git',
     'huggingface',
     'LangChain',
+    'LangGraph',
     'scikit-learn',
     'C++',
     'Tensorflow',
     'Keras',
-    'NLTK',
-    'spaCy',
     'CUDA',
+    'DeepSpeed',
   ],
   experiences: [
     {
       company: 'Intel Corporation',
-      position: 'Technology CAD Software Research Engineer/Scientist Internship',
+      position:
+        'Technology CAD Software Research Engineer/Scientist Internship',
       from: 'May 2025',
       to: 'August 2025',
       companyLink: 'https://intel.com',
     },
     {
       company: 'Intel Corporation',
-      position: 'Technology CAD Software Research Engineer/Scientist Internship',
+      position:
+        'Technology CAD Software Research Engineer/Scientist Internship',
       from: 'May 2024',
       to: 'August 2024',
       companyLink: 'https://intel.com',
@@ -172,13 +178,13 @@ const CONFIG = {
   certifications: [
     {
       name: 'Artificial Intelligence 2.0: AI, Python, DRL',
-      body: 'Introduced to the Foundation Techniques of Deep Reinforcement Learning \& implementation of (Deep) Q-Learning, Policy Gradient, Actor Critic, Deep Deterministic Policy Gradient (DDPG), Twin-Delayed DDPG (TD3)',
+      body: 'Introduced to the Foundation Techniques of Deep Reinforcement Learning & implementation of (Deep) Q-Learning, Policy Gradient, Actor Critic, Deep Deterministic Policy Gradient (DDPG), Twin-Delayed DDPG (TD3)',
       year: '2024',
       link: 'https://drive.google.com/file/d/1hwCb--ME7ki4XFXmI-BtNhQ2WOhb8zXj/view?usp=sharing',
     },
     {
       name: 'Generative AI with Large Language Models',
-      body: 'Introduced to Parameter-efficient Fine Tuning (PEFT), Reinforcement learning from human feedback (RLHF), Chain-of-Thought Prompting (CoT) \& Retrieval Augmented Generation (RAG)',
+      body: 'Introduced to Parameter-efficient Fine Tuning (PEFT), Reinforcement learning from human feedback (RLHF), Chain-of-Thought Prompting (CoT) & Retrieval Augmented Generation (RAG)',
       year: '2023',
       link: 'https://drive.google.com/file/d/1LiSkURplKL7wwzsJA8hpjsnIJ5M6IFQ6/view?usp=sharing',
     },
@@ -235,22 +241,28 @@ const CONFIG = {
       authors: 'Christos Vasileiou, Yiorgos Makris',
       link: 'https://ieeexplore.ieee.org/document/11219864',
       description:
-        'A pilot study exploring whether Large Language Models (LLMs) can generate test vectors for stuck-at faults in gate-level combinational circuits. Unlike conventional ATPG, which relies on algorithmic Boolean reasoning, LLMs lack such capability. However, we hypothesize that a “language of test” exists, capable of capturing how input stimuli expose differences between fault-free and faulty netlist functionality - analogous to how natural language expresses meaning through symbol substitution. This stems from observing that netlists, like text, comprise functional paths of logic gates combining signals, akin to sentences combining words. To test this hypothesis, we generated 958K test vectors across 40K randomly generated combinational circuits, using fault-simulation results to fine-tune a 7 billion parameter Llama-2 model via Low-Rank Adaptation (LoRA), Supervised Fine-Tuning (SFT), and Group Relative Policy Optimization (GRPO) to mitigate hallucinations. On unseen netlists, the model generates test vectors for target faults with over 80\% success—far exceeding random test generation. While only preliminary, these findings suggest LLMs can learn this “language of test” and aid test generation, warranting further research into training, fine-tuning, and prompt engineering to boost accuracy and utility.',
+        'A pilot study exploring whether Large Language Models (LLMs) can generate test vectors for stuck-at faults in gate-level combinational circuits. Unlike conventional ATPG, which relies on algorithmic Boolean reasoning, LLMs lack such capability. However, we hypothesize that a “language of test” exists, capable of capturing how input stimuli expose differences between fault-free and faulty netlist functionality - analogous to how natural language expresses meaning through symbol substitution. This stems from observing that netlists, like text, comprise functional paths of logic gates combining signals, akin to sentences combining words. To test this hypothesis, we generated 958K test vectors across 40K randomly generated combinational circuits, using fault-simulation results to fine-tune a 7 billion parameter Llama-2 model via Low-Rank Adaptation (LoRA), Supervised Fine-Tuning (SFT), and Group Relative Policy Optimization (GRPO) to mitigate hallucinations. On unseen netlists, the model generates test vectors for target faults with over 80% success—far exceeding random test generation. While only preliminary, these findings suggest LLMs can learn this “language of test” and aid test generation, warranting further research into training, fine-tuning, and prompt engineering to boost accuracy and utility.',
     },
     {
-      title: 'Unveiling the Mask: Trusted Semiconductor Manufacturing through Wafer-Level Mask-Set Attestation',
-      conferenceName: '2025 IEEE International Conference Computer-Aided Design (ICCAD)',
+      title:
+        'Unveiling the Mask: Trusted Semiconductor Manufacturing through Wafer-Level Mask-Set Attestation',
+      conferenceName:
+        '2025 IEEE International Conference Computer-Aided Design (ICCAD)',
       journalName: '',
-      authors: 'Suraag Telakulla, Ching-Yi Chang, Matthew Nigh, Christos Vasileiou, Yiorgos Makris',
+      authors:
+        'Suraag Telakulla, Ching-Yi Chang, Matthew Nigh, Christos Vasileiou, Yiorgos Makris',
       link: 'https://www.researchgate.net/profile/Ching-Yi-Chang-4/publication/396514306_Unveiling_the_Mask_Trusted_Semiconductor_Manufacturing_through_Wafer-Level_Mask-Set_Attestation/links/68efee2702d6215259bbff75/Unveiling-the-Mask-Trusted-Semiconductor-Manufacturing-through-Wafer-Level-Mask-Set-Attestation.pdf',
       description:
         'We introduce machine learning-based solutions for differentiating wafers fabricated using trusted and untrusted mask-sets based on the typical metrology or wafer acceptance tests collected during semiconductor manufacturing and testing. Our methods leverage the systematic nature of process variation and capture the subtle causality between mask modifications and either physical dimensions or electrical characteristics of the produced silicon, which can then be used for the purpose of wafer-level mask-set attestation. Effectiveness of our solutions is demonstrated on a dataset of inline and e-test measurements from 8000 wafers fabricated with multiple variants of a mask-set in the GlobalFoundries 12LP FinFET technology node.',
     },
     {
-      title: 'Efficient CNN-Based Super Resolution Algorithms for Mmwave Mobile Radar Imaging',
-      conferenceName: '2022 IEEE International Conference on Image Processing (ICIP)',
+      title:
+        'Efficient CNN-Based Super Resolution Algorithms for Mmwave Mobile Radar Imaging',
+      conferenceName:
+        '2022 IEEE International Conference on Image Processing (ICIP)',
       journalName: '',
-      authors: 'Christos Vasileiou, Josiah W. Smith, Shiva Thiagarajan, Matthew Nigh, Yiorgos Makris, Murat Torlak',
+      authors:
+        'Christos Vasileiou, Josiah W. Smith, Shiva Thiagarajan, Matthew Nigh, Yiorgos Makris, Murat Torlak',
       link: 'https://ieeexplore.ieee.org/document/9897190',
       description:
         'In this paper, we introduce the first CNN-based super resolution algorithm for mobile freehand SAR imaging in the near-field. Rather than training on randomly placed point targets, we improve upon previous work by incorporating solid, intricate objects in the simulation that are more representative of real-world scenarios. The proposed CNN algorithm is applied to images recovered by the EMPM algorithm yielding high-resolution low-noise SAR images and outperforming previous techniques. The Mobile-SRGAN is the first SAR super resolution algorithm developed for freehand radar imaging, a more difficult task than traditional SAR super resolution, and efficiently recovers high-resolution images with low computational cost, deeming it fit for computationally constrained applications.',
@@ -278,7 +290,7 @@ const CONFIG = {
   themeConfig: {
     defaultTheme: 'procyon',
 
-    // Hides the switch in the navbar
+    // Hides the dark/light switch
     // Useful if you want to support a single color mode
     disableSwitch: false,
 
@@ -289,23 +301,9 @@ const CONFIG = {
     // Display the ring in Profile picture
     displayAvatarRing: true,
 
-    // Available themes. To remove any theme, exclude from here.
-    themes: [
-      'light',
-      'dark',
-      'emerald',
-      'corporate',
-      'synthwave',
-      'halloween',
-      'forest',
-      'Luxury',
-      'business',
-      'night',
-      'dim',
-      'nord',
-      'sunset',
-      'procyon',
-    ],
+    // Two themes: the default (dark) one and a light one. The theme card
+    // shows a switch between them.
+    themes: ['procyon', 'emerald'],
 
     // Custom theme, applied to `procyon` theme
     customTheme: {
@@ -320,7 +318,7 @@ const CONFIG = {
   },
 
   // Optional Footer. Supports plain text or HTML.
-  footer: `© 2026 Christos Vasileiou`,
+  footer: `© ${new Date().getFullYear()} Christos Vasileiou`,
 
   enablePWA: false,
 };
