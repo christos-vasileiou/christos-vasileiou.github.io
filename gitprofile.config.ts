@@ -290,7 +290,7 @@ const CONFIG = {
   themeConfig: {
     defaultTheme: 'procyon',
 
-    // Hides the switch in the navbar
+    // Hides the dark/light switch
     // Useful if you want to support a single color mode
     disableSwitch: false,
 
@@ -301,23 +301,9 @@ const CONFIG = {
     // Display the ring in Profile picture
     displayAvatarRing: true,
 
-    // Available themes. To remove any theme, exclude from here.
-    themes: [
-      'light',
-      'dark',
-      'emerald',
-      'corporate',
-      'synthwave',
-      'halloween',
-      'forest',
-      'luxury',
-      'business',
-      'night',
-      'dim',
-      'nord',
-      'sunset',
-      'procyon',
-    ],
+    // Two themes: the default (dark) one and a light one. The theme card
+    // shows a switch between them.
+    themes: ['procyon', 'emerald'],
 
     // Custom theme, applied to `procyon` theme
     customTheme: {
