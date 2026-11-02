@@ -23,7 +23,7 @@ export interface SanitizedExternalProject {
   title: string;
   description?: string;
   imageUrl?: string;
-  link: string;
+  link?: string;
 }
 
 export interface SanitizedExternalProjects {
@@ -47,6 +47,7 @@ export interface SanitizedSocial {
   twitter?: string;
   mastodon?: string;
   researchGate?: string;
+  googleScholar?: string;
   facebook?: string;
   instagram?: string;
   youtube?: string;

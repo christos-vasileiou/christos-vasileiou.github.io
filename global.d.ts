@@ -79,7 +79,7 @@ interface ExternalProjects {
     title: string;
     description?: string;
     imageUrl?: string;
-    link: string;
+    link?: string;
   }[];
 }
 
@@ -104,6 +104,43 @@ interface SEO {
    * Meta image
    */
   imageURL?: string;
+
+  /**
+   * Public site URL (canonical link, sitemap, structured data)
+   */
+  siteUrl?: string;
+
+  /**
+   * Short tagline shown in the crawler-visible page content
+   */
+  tagline?: string;
+
+  /**
+   * Topics for Person structured data
+   */
+  knowsAbout?: string[];
+
+  /**
+   * Additional profile URLs for Person structured data
+   */
+  sameAs?: string[];
+
+  /**
+   * Google Search Console verification token
+   */
+  googleSiteVerification?: string;
+
+  /**
+   * Bing Webmaster Tools verification token
+   */
+  bingSiteVerification?: string;
+}
+
+interface GoatCounter {
+  /**
+   * GoatCounter site code (the subdomain of goatcounter.com)
+   */
+  code?: string;
 }
 
 interface Social {
@@ -126,6 +163,11 @@ interface Social {
    * ResearchGate username
    */
   researchGate?: string;
+
+  /**
+   * Google Scholar user id (the `user=` value in the profile URL)
+   */
+  googleScholar?: string;
 
   /**
    * Facebook
@@ -398,6 +440,11 @@ interface Config {
    * Google Analytics config
    */
   googleAnalytics?: GoogleAnalytics;
+
+  /**
+   * GoatCounter visitor analytics config
+   */
+  goatcounter?: GoatCounter;
 
   /**
    * Hotjar config

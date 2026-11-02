@@ -9,37 +9,19 @@ type HeadTagEditorProps = {
 /**
  * Renders the head tag editor component.
  *
- * @param {HeadTagEditorProps} googleAnalyticsId - The Google Analytics ID.
+ * The Google Analytics tag itself is added to the static index.html at build time
+ * (see seo-plugin.ts), so it is not injected here a second time.
+ *
  * @param {HeadTagEditorProps} appliedTheme - The applied theme.
  * @return {React.ReactElement} The head tag editor component.
  */
-const HeadTagEditor: React.FC<HeadTagEditorProps> = ({
-  googleAnalyticsId,
-  appliedTheme,
-}) => {
+const HeadTagEditor: React.FC<HeadTagEditorProps> = ({ appliedTheme }) => {
   return (
     <Helmet>
       <meta
         name="theme-color"
         content={isDarkishTheme(appliedTheme) ? '#000000' : '#ffffff'}
       />
-      {googleAnalyticsId && (
-        <>
-          <script
-            async
-            src={`https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}`}
-          ></script>
-          <script>
-            {`window.dataLayer = window.dataLayer || [];
-function gtag() {
-  dataLayer.push(arguments);
-}
-gtag('js', new Date());
-gtag('config', '${googleAnalyticsId}');
-`}
-          </script>
-        </>
-      )}
     </Helmet>
   );
 };
